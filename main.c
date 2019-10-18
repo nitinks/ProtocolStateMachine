@@ -53,7 +53,7 @@ void proto_rx( unsigned char * buffer, int buffer_size )
             /* set the state to connected */
             state = CONNECTED;
             
-/***********************************************************/            
+            /***********************************************************/            
             /* connect response */
             unsigned char res_buffer[CONNECT_PACKET_LENGTH];
             
@@ -98,7 +98,7 @@ void proto_rx( unsigned char * buffer, int buffer_size )
                     reject_packet( buffer, KEY_MISMATCH );
                     return;
                 }
-/******************************************************/
+            /******************************************************/
             /* config response */
             state = CONFIGURED;
             unsigned char res_buffer[CONFIG_PACKET_LENGTH];
